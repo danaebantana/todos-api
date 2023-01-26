@@ -6,9 +6,18 @@ class AuthenticationController < ApplicationController
     json_response(auth_token: auth_token)
   end
 
+  def destroy
+    @curr = nil
+    json_response(message: Message.logout)
+  end
+
   private
 
   def auth_params
     params.permit(:email, :password)
+  end
+
+  def current
+    @curr = AuthenticateUser.new(auth_params[:email],auth_params[:password]).curr_user
   end
 end
