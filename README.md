@@ -25,7 +25,7 @@ A RestAPI which simulates of a to-do list with Ruby on Rails. The functions impl
 
 1. Start up the rails todos-API 
 	```
-	ruby bin\rails server
+	ruby bin/rails server
 	```
 
 	- API is running on `http://localhost:3000/`
