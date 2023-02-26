@@ -10,7 +10,8 @@ tasks:
   - name: Installing Dependencies
     init: |
       bundle install &&
-      yarn install
+      yarn install &&
+      apt-get install curl
       gp sync-done installs
     openMode: split-left
   - name: create database & start server
