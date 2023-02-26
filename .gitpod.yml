@@ -5,9 +5,6 @@ ports:
   - name: Rails server
     port: 3000
     onOpen: open-preview
-  - name: PostgreSQL server
-    port: 5432
-    onOpen: ignore
 
 tasks:
   - name: Installing Dependencies
